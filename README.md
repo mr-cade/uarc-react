@@ -1,3 +1,10 @@
+# Utah Amateur Radio Club Webiste Rebuild
+
+This project is to revamp and refresh the UARC website and is build using React.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
