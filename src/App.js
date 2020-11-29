@@ -15,6 +15,7 @@ import irlp from "./pages/irlp"
 import join from "./pages/join"
 import lending from "./pages/lending"
 import meeting from "./pages/meeting"
+import members from "./pages/members"
 import repeaters from "./pages/repeaters"
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="/join" component={join} />
         <Route exact path="/lending" component={lending} />
         <Route exact path="/meeting" component={meeting} />
+        <Route exact path="/members" component={members} />
         <Route exact path="/repeaters" component={repeaters} />
 
       <Footer/>
