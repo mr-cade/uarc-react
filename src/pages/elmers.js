@@ -1,6 +1,9 @@
 import React from 'react'
+import ElmerTable from '../components/Elmer-table'
 
 export default function Elmers() {
     return(
-        <div>Elmers Page Content</div>
+        <div>
+            <ElmerTable/>
+        </div>
         )}

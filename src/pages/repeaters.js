@@ -1,6 +1,9 @@
 import React from 'react'
+import RepeaterTable from '../components/Repeater-table'
 
 export default function Repeaters() {
     return(
-        <div>Repeater Page Content</div>
+        <div>
+            <RepeaterTable/>
+        </div>
         )}

@@ -1,6 +1,9 @@
 import React from 'react'
+import BookTable from '../components/Book-table'
 
 export default function Books() {
     return(
-        <div>Books Page Content</div>
+        <div>
+            <BookTable/>
+        </div>
         )}

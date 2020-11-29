@@ -1,6 +1,9 @@
 import React from 'react'
+import JoinForm from '../components/Join-form'
 
 export default function JoinUarc() {
     return(
-        <div>Join Page Content</div>
+        <div>
+            <JoinForm/>
+        </div>
         )}
