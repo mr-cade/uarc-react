@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 
 export default function Navbar() {
     return (
-        <Nav defaultActiveKey="/home" className="flex-column float-left">
+        <Nav defaultActiveKey="/home" className="flex-column float-left sidebar">
             <Nav.Link href="/">UARC</Nav.Link>
             <Nav.Link href="/about" eventKey="about">About</Nav.Link>
             <Nav.Link href="/atv" eventKey="atv">ATV</Nav.Link>

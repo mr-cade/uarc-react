@@ -9,9 +9,6 @@ import InputGroup from 'react-bootstrap/InputGroup'
 export default function Header() {
     return (
         <div>
-            <div id="header">
-                <h1 class="text-center" id="title">Utah Amateur Radio Club</h1>
-            </div>
             
             <Navbar className="bg-dark justify-content-between">
                 <Form>
@@ -30,6 +27,10 @@ export default function Header() {
                     </InputGroup>
                 </Form>
             </Navbar>
+            <div id="header">
+                <h1 class="text-center" id="title">Utah Amateur Radio Club</h1>
+            </div>
+            
         </div>
     )
 }
