@@ -10,7 +10,7 @@ export default function Navbar() {
             <Nav.Link href="/atv" eventKey="atv">ATV</Nav.Link>
             <Nav.Link href="/benefits" eventKey="benefits">Benefits</Nav.Link>
             <Nav.Link href="/books" eventKey="books">Books</Nav.Link>
-            <Nav.Link href="/bylaws" eventKey="bylaws">By-Laws</Nav.Link>
+            <Nav.Link href="/bylaws" eventKey="bylaws">Bylaws</Nav.Link>
             <Nav.Link href="/elmers" eventKey="elmers">Elmers</Nav.Link>
             <Nav.Link href="/irlp" eventKey="irlp">IRLP</Nav.Link>
             <Nav.Link href="/join" eventKey="join">Join Uarc</Nav.Link>

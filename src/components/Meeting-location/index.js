@@ -3,7 +3,7 @@ import "./style.css";
 
 export default function MeetingLocation() {
     return (
-        <div>
+        <div className="col-8 mx-auto mt-5">
         <h3>UARC Meeting Schedule and Location</h3>
             <p>The Utah Amateur Radio Club meets on the second Thursday of each month except July and August at 7:30 P.M. Meeting place is on the University of Utah campus in the John and Marva Warnock Engineering Building. The room varies. Check the latest meeting announcement for details for the upcoming meeting.</p>
             <img src="./images/map4.gif" alt="map of meeting location at the University of Utah"></img>

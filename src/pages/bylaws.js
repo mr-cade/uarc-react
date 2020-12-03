@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Bylaws() {
     return (<>
-        <div className="col-6 mx-auto mt-5">
+        <div className="col-8 mx-auto mt-5">
             <p>&nbsp;</p>
 <h3>SECTION I: DIRECTORS, OFFICERS AND DUTIES</h3>
 
@@ -230,7 +230,7 @@ shall meet with the approval of the <b>Board of Directors</b>. These
 <b>membership</b> in the operation of their amateur radio
 stations.</p>
 
-<h3><b>SECTION XII:</b>&#9;</h3>
+<h3>SECTION XII:&#9;</h3>
 
 <p>&#9;It shall be the permanent policy of this <b>Club </b>to support 
 the <b>American Radio Relay League</b>. This is expressed in the 
