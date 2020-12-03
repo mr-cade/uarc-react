@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div class="col-6 mx-auto mt-5">
+        <div className="col-6 mx-auto mt-5">
             <p>The <em>Utah Amatuer Radio Club</em> is the oldest and largest amateur radio club in the state of Utah. It holds the call <b>W7SP</b>, a memorial call for Leonard (Zim) Zimmerman, early UARC member and radio pioneer. It also publishes a monthly newsletter called The Microvolt, electronic versions of which can be found
             <a href="link"> here.</a></p>
             <p>To use this site, please select from the links in the index on the left. You will find the most common destinations available there. Some links direct you to another menu for certain items. The Microvolt link is an example.</p>

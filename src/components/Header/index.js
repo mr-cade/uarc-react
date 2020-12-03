@@ -28,7 +28,7 @@ export default function Header() {
                 </Form>
             </Navbar>
             <div id="header">
-                <h1 class="text-center" id="title">Utah Amateur Radio Club</h1>
+                <h1 className="text-center" id="title">Utah Amateur Radio Club</h1>
             </div>
             
         </div>
