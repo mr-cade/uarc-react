@@ -32,7 +32,7 @@ module.exports = function(app) {
       });
     });
   
-    app.delete("/api/authors/:id", function(req, res) {
+    app.delete("/api/members/:id", function(req, res) {
       db.Member.destroy({
         where: {
           id: req.params.id
@@ -41,6 +41,5 @@ module.exports = function(app) {
         res.json(dbMember);
       });
     });
-  
   };
   
