@@ -18,6 +18,7 @@ import lending from "./pages/lending"
 import meeting from "./pages/meeting"
 import members from "./pages/members"
 import repeaters from "./pages/repeaters"
+import bylaws from "./pages/bylaws"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/atv" component={atv} />
         <Route exact path="/benefits" component={benefits} />  
         <Route exact path="/books" component={books} />
+        <Route exact path="/bylaws" component={bylaws} />
         <Route exact path="/elmers" component={elmers} />
         <Route exact path="/irlp" component={irlp} />
         <Route exact path="/join" component={join} />
