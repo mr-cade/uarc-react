@@ -1,5 +1,33 @@
 .sidebar {
-    background-image: url("./Antenna-Farm.jpg");
-    padding: 10px;
-    height: auto;
+  background-color: #343a40;
+  padding-top: 20px;
+  height: 100vh;
+  width: 180px;
+}
+
+a.nav-link {
+  color: white;
+}
+
+a.nav-link:hover {
+  color: #3494fc;
+  background-color: rgb(71, 71, 71);
+}
+
+.socialIcon {
+  margin-top: 20px;
+}
+
+#icon1,
+#icon2 {
+  color: white;
+  margin: 10px;
+}
+
+#icon1:hover {
+  color: rgb(25, 78, 158);
+}
+
+#icon2:hover {
+  color: rgb(163, 41, 36);
 }
