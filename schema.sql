@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS members;
+CREATE DATABASE members;
