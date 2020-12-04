@@ -18,7 +18,7 @@ export default function LendingTable() {
                     <tr><td>ComTrain’s Tribute to Safety: Tower Climbing Safety and Rescue, 4th Ed.</td><td>1997</td><td>n/a</td><td>29.95</td></tr>
                     <tr><td>Ham Radio for the New Ham: What to do the minute you get your … license</td><td>2019</td><td>97810914021719.99</td><td>9.99</td></tr>
                     <tr><td>Introduction to Radio Frequency Design</td><td>1982</td><td>0872594920</td><td>39.95</td></tr>
-                    <tr><td>Microwave Know How for the Radio Amateur</td><td>2010</td><td>978190508656621.95&nbsp;</td>    <td>21.95</td></tr>
+                    <tr><td>Microwave Know How for the Radio Amateur</td><td>2010</td><td>978190508656621.95&nbsp;</td><td>21.95</td></tr>
                     <tr><td>Microwave Projects 2</td><td>2005</td><td>9781905086092</td><td>29.95</td></tr>
                     <tr><td>Power Supply Handbook</td><td>2006</td><td>9781905086214</td><td>29.95</td></tr>
                     <tr><td>PR-101: ARRL Public Relations (CD-ROM)</td><td>2009</td><td>n/a</td></tr>

@@ -4,7 +4,8 @@ import "./style.css";
 export default function ElmerTable() {
     return (
         <div>
-            <table class="table">
+            <table>
+                <thead>
                 <tr>
                     <th>
                         Topic
@@ -22,6 +23,8 @@ export default function ElmerTable() {
                         Phone
                     </th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>ATV (Fast Scan)</td>
 
@@ -397,6 +400,7 @@ export default function ElmerTable() {
 
                     <td>&nbsp;</td>
                 </tr>
+                </tbody>
             </table>
         </div>
     )

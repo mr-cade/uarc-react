@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <div>
                <div id="header">
-                <h1 class="text-center" id="title">Utah Amateur Radio Club</h1>
+                <h1 className="text-center" id="title">Utah Amateur Radio Club</h1>
             </div>
             <Navbar className="bg-dark justify-content-between"  style={{ padding:"15px"}}>
                 <div className="container" style={{ marginLeft:"60px"}}>
