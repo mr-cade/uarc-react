@@ -17,7 +17,7 @@ export default function Navbar() {
             <Nav.Link href="/lending" eventKey="lending">Lending</Nav.Link>
             <Nav.Link href="/meeting" eventKey="meeting">Meeting</Nav.Link>
             <Nav.Link href="/members" eventKey="members">Members</Nav.Link>
-            <Nav.Link href="/repeaters" eventKey="repeaters">Repeaters</Nav.Link>
+            <Nav.Link href="http://www.utahvhfs.org/rptr.html" target="_blank" eventKey="repeaters">Repeaters</Nav.Link>
         </Nav>
     )
 }
