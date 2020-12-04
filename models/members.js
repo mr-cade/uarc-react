@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
         callsign: DataTypes.STRING,
         streetAddress: DataTypes.STRING,
         city: DataTypes.STRING,
-        email: DataTypes.EMAIL,
+        email: DataTypes.STRING,
         expDate: DataTypes.DATE
     });
 
