@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
 import Header from "./components/Header"
 
 import home from "./pages/home"
@@ -17,6 +17,7 @@ import join from "./pages/join"
 import lending from "./pages/lending"
 import meeting from "./pages/meeting"
 import members from "./pages/members"
+import nets from "./pages/nets"
 import repeaters from "./pages/repeaters"
 import bylaws from "./pages/bylaws"
 
@@ -38,6 +39,7 @@ function App() {
         <Route exact path="/lending" component={lending} />
         <Route exact path="/meeting" component={meeting} />
         <Route exact path="/members" component={members} />
+        <Route exact path="/nets" component={nets} />
         <Route exact path="/repeaters" component={repeaters} />
 
       {/* <Footer/> */}
