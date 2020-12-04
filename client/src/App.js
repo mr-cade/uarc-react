@@ -40,7 +40,7 @@ function App() {
         <Route exact path="/members" component={members} />
         <Route exact path="/repeaters" component={repeaters} />
 
-      <Footer/>
+      {/* <Footer/> */}
       </Router>
     </div>
   );

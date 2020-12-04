@@ -9,10 +9,20 @@ import InputGroup from 'react-bootstrap/InputGroup'
 export default function Header() {
     return (
         <div>
-            
-            <Navbar className="bg-dark justify-content-between">
-                <Form>
-                    <InputGroup>
+               <div id="header">
+                <h1 class="text-center" id="title">Utah Amateur Radio Club</h1>
+            </div>
+            <Navbar className="bg-dark justify-content-between"  style={{ padding:"15px"}}>
+                <div className="container" style={{ marginLeft:"60px"}}>
+                <button
+          className="navbar-toggler ml-auto"
+          type="button"
+   
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+                <Form className="form-inline">
+                    <InputGroup >
                         <FormControl
                             placeholder="Callsign"
                             aria-label="Callsign"
@@ -23,14 +33,11 @@ export default function Header() {
                             aria-label="Password"
                             aria-describedby="basic-addon1"
                         />
-                        <Button type="submit">Login</Button>
+                        <Button type="submit"  style={{ marginLeft:"10px"}}>Login</Button>
                     </InputGroup>
                 </Form>
+                </div>
             </Navbar>
-            <div id="header">
-                <h1 className="text-center" id="title">Utah Amateur Radio Club</h1>
-            </div>
-            
         </div>
     )
 }
