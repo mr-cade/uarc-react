@@ -1,10 +1,12 @@
 import React from "react";
 import "./style.css";
 
+// import api from "../../utils/api.js"
+
 export default function JoinForm() {
     return (
         <div className="m-3">
-            <form action="https://www.paypal.com/" method="post" target="_top">
+            <form onSubmit>
                 <label htmlFor="fName">First name:</label>
                 <input type="" name="fName"   />
                 <label htmlFor="lName">Last name:</label>

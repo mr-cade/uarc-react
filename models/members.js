@@ -9,13 +9,13 @@ module.exports = function (sequelize, DataTypes) {
         expDate: DataTypes.DATE
     });
 
-    Member.associate = function (models) {
-        // Associating Member with Posts
-        // When an Member is deleted, also delete any associated Posts
-        Member.hasMany(models.Post, {
-            onDelete: "cascade"
-        });
-    };
+    // Member.associate = function (models) {
+    //     // Associating Member with Posts
+    //     // When an Member is deleted, also delete any associated Posts
+    //     Member.hasMany(models.Post, {
+    //         onDelete: "cascade"
+    //     });
+    // };
 
     return Member;
 };
