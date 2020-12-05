@@ -18,15 +18,18 @@ var PORT = process.env.PORT || 8080;
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  database: 'members'
+  database: 'members',
+  password: '20164Runner'
 });
-connection.query(
-  'SELECT * FROM `table`',
-  function(err, results, fields) {
-    console.log(results); // results contains rows returned by server
-    console.log(fields); // fields contains extra meta data about results, if available
+
+connection.connect(function(err) {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
   }
-);
+  console.log("connected as id " + connection.threadId);
+});
+
 // Requiring our models for syncing
 var db = require("./models");
 
@@ -44,7 +47,9 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./routes/api-routes.js")(app);
+const apiRoutes = require("./routes/api-routes");
+
+app.use("/api", apiRoutes);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
