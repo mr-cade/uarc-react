@@ -5,7 +5,7 @@ module.exports = function(app) {
       // Here we add an "include" property to our options in our findAll query
       // We set the value to an array of the models we want to include in a left outer join
       // In this case, just db.Post
-      db.Member.findAll({
+      db.member.findAll({
         include: [db.Post]
       }).then(function(dbMember) {
         res.json(dbMember);
@@ -16,7 +16,7 @@ module.exports = function(app) {
       // Here we add an "include" property to our options in our findOne query
       // We set the value to an array of the models we want to include in a left outer join
       // In this case, just db.Post
-      db.Member.findOne({
+      db.member.findOne({
         where: {
           id: req.params.id
         },
@@ -27,13 +27,13 @@ module.exports = function(app) {
     });
   
     app.post("/api/members", function(req, res) {
-      db.Member.create(req.body).then(function(dbMember) {
+      db.member.create(req.body).then(function(dbMember) {
         res.json(dbMember);
       });
     });
   
     app.delete("/api/members/:id", function(req, res) {
-      db.Member.destroy({
+      db.member.destroy({
         where: {
           id: req.params.id
         }

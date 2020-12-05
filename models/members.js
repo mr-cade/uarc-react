@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Member = sequelize.define("Member", {
+    var member = sequelize.define("member", {
         fName: DataTypes.STRING,
         lName: DataTypes.STRING,
         callsign: DataTypes.STRING,
@@ -17,5 +17,5 @@ module.exports = function (sequelize, DataTypes) {
     //     });
     // };
 
-    return Member;
+    return member;
 };
