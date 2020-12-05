@@ -5,8 +5,10 @@ module.exports = function (sequelize, DataTypes) {
         callsign: DataTypes.STRING,
         streetAddress: DataTypes.STRING,
         city: DataTypes.STRING,
-        email: DataTypes.STRING,
-        expDate: DataTypes.DATE
+        state: DataTypes.STRING,
+        zipcode: DataTypes.STRING,
+        expDateMonth: DataTypes.INTEGER,
+        expDateYear: DataTypes.INTEGER
     });
 
     // Member.associate = function (models) {

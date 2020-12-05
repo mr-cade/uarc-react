@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/mr-cade/uarc-react#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
