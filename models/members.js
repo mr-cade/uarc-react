@@ -1,3 +1,5 @@
+require
+
 module.exports = function (sequelize, DataTypes) {
     var member = sequelize.define("member", {
         fName: DataTypes.STRING,

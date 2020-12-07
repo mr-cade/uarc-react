@@ -1,10 +1,10 @@
 import axios from "axios";
 
-export default {
+const memberRoutes = {
     // Gets all subs
     getMembers: function() {
       return axios
-      .get("/api/members")
+      .get("/api/members/all")
       
     },
     
@@ -13,3 +13,5 @@ export default {
       return axios.post("/api/members", memberData);
     }
   };
+
+  export default memberRoutes
