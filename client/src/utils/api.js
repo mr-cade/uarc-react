@@ -4,7 +4,7 @@ const memberRoutes = {
     // Gets all subs
     getMembers: function() {
       return axios
-      .get("/api/members/all")
+      .get("/api/members")
       
     },
     
