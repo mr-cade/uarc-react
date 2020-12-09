@@ -29,6 +29,7 @@ class JoinForm extends React.Component {
         // this.handleLicenseLevelChange = this.handleLicenseLevelChange.bind(this);
         this.handleAddressChange = this.handleAddressChange.bind(this);
         this.handleCityChange = this.handleCityChange.bind(this);
+        this.handleStateLocationChange = this.handleCityChange.bind(this);
         this.handleZipcodeChange = this.handleZipcodeChange.bind(this);
         // this.handleEmailChange = this.handleEmailChange.bind(this);
         // this.handleARRLChange = this.handleARRLChange.bind(this);
@@ -39,9 +40,8 @@ class JoinForm extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('Thank You for your Submission, ' + this.state.name);
+        alert('Thank You for your Submission, ' + this.state.fName);
         event.preventDefault();
-        console.log(this.state.email)
 
         API.saveMembers({
             fName: this.state.fName,
@@ -52,6 +52,7 @@ class JoinForm extends React.Component {
             // license: this.state.licenseLevel,
             address: this.state.address,
             city: this.state.city,
+            stateLocation: this.state.stateLocation,
             zipcode: this.state.zipcode,
             // email: this.state.email,
             // arrl: this.state.arrl,
@@ -59,7 +60,6 @@ class JoinForm extends React.Component {
             // message: this.state.message,
         })
             .catch(err => console.log(err))
-        //   need to write a post route here 
     }
 
     handleFNameChange(event) {
@@ -92,9 +92,9 @@ class JoinForm extends React.Component {
         });
     }
 
-    handleStateChange(event) {
+    handleStateLocationChange(event) {
         this.setState({
-            state: event.target.value
+            stateLocation: event.target.value
         });
     }
 
@@ -145,11 +145,11 @@ class JoinForm extends React.Component {
                 <label htmlFor="city">City:</label>
                 <input type="" name="city" value={this.state.value} onChange={this.handleCityChange}/>
                 <label htmlFor="state">State:</label>
-                <input type="" name="state" value={this.state.value} onChange={this.handleStateChange}/>
+                <input type="" name="stateLocation" value={this.state.value} onChange={this.handleStateLocationChange}/>
                 <label htmlFor="zipcode">Zipcode:</label>
                 <input type="" name="zipcode" value={this.state.value} onChange={this.handleZipcodeChange}/>
                 <br />
-                <label htmlFor="email">Email:</label>
+                {/* <label htmlFor="email">Email:</label>
                 <input type="" name="email" value={this.state.value} onChange={this.handleEmailChange}/>
                 <label htmlFor="arrlMembership">ARRL Member:</label>
                 <select id="arrlMembership">
@@ -163,7 +163,7 @@ class JoinForm extends React.Component {
                 <label htmlFor="message">Optional note to the secretary (Let us know about any of the above items you would prefer not to be published):</label>
                 <br />
                 <textarea name="message">
-                </textarea>
+                </textarea> */}
                 <br/>
                 <br/>
                 <br></br>
@@ -172,45 +172,6 @@ class JoinForm extends React.Component {
                     name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /> */}
             </form>     
         </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            // <div>
-            //     <br />
-            //     <div className="card col-md-4 " id="infoCard">
-            //         <div className="card-body">
-            //             <div className="card-title"><h4>Our Newsletter</h4></div>
-            //             <div className="card-text">Stay up-to-date with all things Tangible Creativity! New crafts, events, and news will be at your fingertips so you never miss a beat! Craft on!</div>
-            //         </div>
-            //         <img src="" className="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></img>
-            //     </div>
-            //     <br />
-            //     <div className="card col-md-4 " id="signupCard">
-            //         <div className="card-title"><h4>Signup for our newsletter!</h4>
-            //         </div>
-            //         <form onSubmit={this.handleSubmit}>
-            //             <label>
-            //                 Name:
-            //         <br></br>
-            //                 <input type="text" name="name" value={this.state.value} onChange={this.handleNameChange} />
-            //             </label>
-            //             <br></br>
-            //             <label>
-            //                 Email:
-            //         <br></br>
-            //                 <input type="email" name="email" value={this.state.value} onChange={this.handleEmailChange} />
-            //             </label>
-            //             <br></br>
-            //             <input type="submit" className="btn-primary" value="Subscribe!" />
-            //         </form>
-            //     </div>
-            //     <br />
-            // </div>
         );
     }
 }
