@@ -29,11 +29,11 @@ class MemberTable extends Component {
         if (this.state.items.length === 0) {
             return null;
         }
-        console.log(this.state)
+        console.log("state: " + this.state)
 
         return (
 
-            <table style={{ marginTop: "5%", width: "70%", marginLeft: "15%", marginRight: "15%", textAlign: "center" }} class="table table-hover table-bordered table-gradient">
+            <table style={{ marginTop: "5%", width: "70%", marginLeft: "15%", marginRight: "15%", textAlign: "center" }} className="table table-hover table-bordered table-gradient">
                 <thead>
                     <tr>
                         <th scope="col">id</th>
@@ -50,9 +50,10 @@ class MemberTable extends Component {
                 </thead>
                 <tbody>
                     {this.state.items.map((items) => {
+                        console.log("item: " + items[0])
                         return (
                             <TableRow
-                                id={items.id}
+                                key={items.id}
                                 fName={items.fName}
                                 lName={items.lName}
                                 callsign={items.callsign}

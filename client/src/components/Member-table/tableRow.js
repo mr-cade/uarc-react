@@ -1,6 +1,7 @@
 import React from 'react';
 
 function TableRow(props) {
+    // console.log("props: " + props.fName)
     return (
     <tr>
         <td>{props.id}</td>
