@@ -1,10 +1,12 @@
 import React from "react";
 import "./style.css";
 import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl'
-import Button from 'react-bootstrap/Button'
-import InputGroup from 'react-bootstrap/InputGroup'
+
+// for login bar: 
+// import Form from 'react-bootstrap/Form';
+// import FormControl from 'react-bootstrap/FormControl'
+// import Button from 'react-bootstrap/Button'
+// import InputGroup from 'react-bootstrap/InputGroup'
 
 export default function Header() {
     return (
@@ -21,7 +23,8 @@ export default function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-                <Form className="form-inline">
+                {/* Login Bar: */}
+                {/* <Form className="form-inline">
                     <InputGroup >
                         <FormControl
                             placeholder="Callsign"
@@ -35,7 +38,7 @@ export default function Header() {
                         />
                         <Button type="submit"  style={{ marginLeft:"10px"}}>Login</Button>
                     </InputGroup>
-                </Form>
+                </Form> */}
                 </div>
             </Navbar>
         </div>
