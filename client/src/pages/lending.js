@@ -3,7 +3,7 @@ import LendingTable from '../components/Lending-table'
 
 export default function Lending() {
     return(
-        <div>
+        <div className="col-6 mx-auto mt-5">
             <LendingTable/>
         </div>
         )}

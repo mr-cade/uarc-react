@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Atv() {
     return(
-        <div>
+        <div className="col-6 mx-auto mt-5">
             <h3>Amateur Television in Utah</h3>
                 <p>We have some pages devoted to amateur television (ATV) created by KA7OEI a number of years ago, but we should warn you that they are a bit dated. ATV activity has all but vanished in the Salt Lake valley and one might speculate on the reasons. One is likely that the “critical mass” of operators needed to keep interest up seems to have fallen away.</p>
                 <p>The technical information in these pages should still be valid for anyone interested in getting on analog (NTSC) television.</p>

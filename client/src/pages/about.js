@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div>
+        <div className="col-6 mx-auto mt-5">
             <h1>Club Information</h1>
                 <p>
                     The Utah Amateur Radio Club (UARC) is a general-purpose amateur radio club serving Salt Lake City and nearby areas. It is a Utah non-profit corporation. Meetings are held on the second Thursday of each month, except for July and August. Meeting topics include many amateur-related items such as DX, satellites, Amateur Television, antennas, and contests. A copy of the club <a href="link">By-Laws is available here.</a> 

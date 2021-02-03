@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Irlp() {
     return(
-        <div>
+        <div className="col-6 mx-auto mt-5">
             <h3>Getting Started with IRLP</h3>
                 <p>The Utah Amateur Radio Club operates an IRLP node on its 146.76 Lake Mountain repeater. Members can use this node to communicate with amateurs across the country and in many parts of the world.</p>
             <h5>What is IRLP?</h5>

@@ -21,6 +21,7 @@ export default function Navbar() {
             <Nav.Link href="/members" eventKey="members">Members</Nav.Link>
             <Nav.Link href="/repeaters" eventKey="repeaters">Repeaters</Nav.Link>
             <Nav.Link href="/nets" eventKey="nets">Nets Schedule</Nav.Link>
+            <Nav.Link href="/bylaws" eventKey="bylaws">Bylaws</Nav.Link>
              <div className="socialIcon">
             <a 
             id="icon1"

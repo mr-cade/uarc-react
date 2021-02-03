@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Benefits() {
     return (
-        <div className="m-5">
+        <div className="col-6 mx-auto mt-5">
             <h3>Repeaters</h3>
                 <p>UARC operates three repeaters. On the 9000-foot Farnsworth Peak site (location of the KSL Channel 5 television transmitter) is one of two 146.62 MHz repeaters. The other one operates synchronously from Scott's Hill, on the ridge between Big Cottonwood Canyon and Park City. The receiver receiving the best signal at any given time feeds the transmitters on both sites.</p>
                 <p>Lake Mountain, west of Utah Lake, at 7600 feet, is home to the 146.76 MHz repeater. The 146.76 repeater is a node in the Internet Repeater Linking Project (IRLP). UARC members can use it to connect to other IRLP repeaters throughout the world. (See instructions for IRLP usage.) Although the repeaters are open to all amateurs, IRLP use is reserved for UARC members and visitors from out of the area. No CTCSS (also known as "PL") tones are required.</p>

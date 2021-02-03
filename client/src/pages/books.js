@@ -3,7 +3,7 @@ import BookTable from '../components/Book-table'
 
 export default function Books() {
     return (
-        <div>
+        <div className="col-6 mx-auto mt-5">
             <h2 align="center">ARRL Books Available</h2>
 
             <p>
