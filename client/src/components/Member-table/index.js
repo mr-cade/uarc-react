@@ -61,14 +61,14 @@ class MemberTable extends Component {
                                 fName={items.fName}
                                 lName={items.lName}
                                 callsign={items.callsign}
-                                license={items.License}
-                                email={items.Email}
+                                license={items.license}
+                                email={items.email}
                                 phone={items.phone}
-                                address1={items.Address1}
-                                address2={items.Address2}
-                                city={items.City}
-                                state={items.stateLocation}
-                                zipcode={items.Zip}
+                                address1={items.address1}
+                                address2={items.address2}
+                                city={items.city}
+                                state={items.state}
+                                zipcode={items.zipcode}
                                 // expDateMonth={items.expDateMonth}
                                 // expDateYear={items.expDateYear}
                             />)
