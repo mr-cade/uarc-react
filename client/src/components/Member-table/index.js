@@ -40,12 +40,16 @@ class MemberTable extends Component {
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
                         <th scope="col">callsign</th>
+                        <th scope="col">License Level</th>
+                        <th scope="col">email</th>
+                        <th scope="col">Phone</th>
                         <th scope="col">Street Address</th>
+                        <th scope="col">Address2</th>
                         <th scope="col">City</th>
                         <th scope="col">State</th>
                         <th scope="col">Zipcode</th>
-                        <th scope="col">Expiration Month</th>
-                        <th scope="col">Expiration Year</th>
+                        {/* <th scope="col">Expiration Month</th>
+                        <th scope="col">Expiration Year</th> */}
                     </tr>
                 </thead>
                 <tbody>
@@ -57,12 +61,16 @@ class MemberTable extends Component {
                                 fName={items.fName}
                                 lName={items.lName}
                                 callsign={items.callsign}
-                                streetAddress={items.streetAddress}
-                                city={items.city}
-                                state={items.state}
-                                zipcode={items.zipcode}
-                                expDateMonth={items.expDateMonth}
-                                expDateYear={items.expDateYear}
+                                license={items.License}
+                                email={items.Email}
+                                phone={items.phone}
+                                address1={items.Address1}
+                                address2={items.Address2}
+                                city={items.City}
+                                state={items.stateLocation}
+                                zipcode={items.Zip}
+                                // expDateMonth={items.expDateMonth}
+                                // expDateYear={items.expDateYear}
                             />)
                     })
                     }

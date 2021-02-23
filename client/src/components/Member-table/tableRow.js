@@ -8,10 +8,14 @@ function TableRow(props) {
         <td>{props.fName}</td>
         <td>{props.lName}</td>
         <td>{props.callsign}</td>
-        <td>{props.streetAddress}</td>
+        <td>{props.License}</td>
+        <td>{props.Email}</td>
+        <td>{props.phone}</td>
+        <td>{props.Address1}</td>
+        <td>{props.Address2}</td>
         <td>{props.city}</td>
-        <td>{props.state}</td>
-        <td>{props.zipcode}</td>
+        <td>{props.stateLocation}</td>
+        <td>{props.Zip}</td>
     </tr>
     
     )
