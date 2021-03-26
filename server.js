@@ -47,7 +47,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Static directory
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 // Routes
 // =============================================================
