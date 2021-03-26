@@ -38,16 +38,23 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"))
-  // Express will serve up the front-end index.html file if it doesn't recognize the route
-  // app.get("*", (req, res) =>
-  //   res.sendFile(path.resolve("build", "index.html"))
-  // );
-}
-app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+app.use(favicon(__dirname + '/build/favicon.ico'));
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"))
+//   // Express will serve up the front-end index.html file if it doesn't recognize the route
+//   // app.get("*", (req, res) =>
+//   //   res.sendFile(path.resolve("build", "index.html"))
+//   // );
+// }
+// app.use(function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 // Static directory
 // app.use(express.static("public"));
