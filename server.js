@@ -6,7 +6,7 @@
 // =============================================================
 var express = require("express");
 const mysql = require('mysql2');
-
+const path = require("path");
 
 // Sets up the Express App
 // =============================================================
@@ -41,13 +41,10 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"))
   // Express will serve up the front-end index.html file if it doesn't recognize the route
-  // app.get("*", (req, res) =>
-  //   res.sendFile(path.resolve("build", "index.html"))
-  // );
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve("build", "index.html"))
+  );
 }
-app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
 
 // Static directory
 // app.use(express.static("public"));
