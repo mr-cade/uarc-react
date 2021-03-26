@@ -45,9 +45,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve("build", "index.html"))
   );
 }
-app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
 
 // Static directory
 app.use(express.static("public"));
