@@ -51,6 +51,10 @@ const apiRoutes = require("./routes/api-routes");
 
 app.use("/api", apiRoutes);
 
+app.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: true }).then(function() {
